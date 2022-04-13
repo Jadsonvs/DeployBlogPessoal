@@ -38,7 +38,7 @@ public class UsuarioService {
 			Optional<Usuario> usuario = usuarioRepository.findByUsuario(usuarioLogin.get().getUsuario());
 		
 		if(usuario.isPresent()) {
-			if(compararSenhas(usuarioLogin.get().getSenha(), usuario.get().getSenha()));// pegar senha encriptada e outra não e compara se são iguais, se iguais retorna verdadeiro
+			if(compararSenhas(usuarioLogin.get().getSenha(), usuario.get().getSenha()));// pegar senha encriptada e não criptografada e compara se são iguais, se iguais retorna verdadeiro
 				usuarioLogin.get().setId(usuario.get().getId());
 				usuarioLogin.get().setNome(usuario.get().getNome());
 				usuarioLogin.get().setId(usuario.get().getId());

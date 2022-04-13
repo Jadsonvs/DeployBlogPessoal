@@ -26,7 +26,8 @@ public class SwaggerConfig {
 				//Linhas 27 a 30:Insere as informações sobre a API (Nome do projeto (Title), Descrição e Versão).
 				  	.info(new Info()
 						.title("Projeto Blog Pessoal")
-						.description("Projeto Blog Pessoal - Generation Brasil")
+						.description("Blog Pessoal para contar histórias, publicar conteúdos pessoais "
+								+ "e escrever sobre qualquer tipo de assunto, interesse e conhecimento.")
 						.version("v0.0.1")
 				//Linhas 32 a 34:Insere as informações referentes a licença da API (Nome e Link).
 					.license(new License()
@@ -34,13 +35,13 @@ public class SwaggerConfig {
 						.url("https://brazil.generation.org/"))
 				//Linhas 36 a 39:Insere as informações de contato da pessoa Desenvolvedora (Nome, Site e E-mail).
 					.contact(new Contact()
-						.name("Conteudo Generation")
-						.url("https://github.com/conteudoGeneration")
-						.email("conteudogeneration@gmail.com")))
+						.name("Jadson Viana")
+						.url("https://github.com/Jadsonvs")
+						.email("jadson.vsantos2013@gmail.com")))
 				//Linhas 41 a 43:Insere as informações referentes a Documentações Externas (Github,Gitpage e etc), onde são informados o Nome e o Link.
 					.externalDocs(new ExternalDocumentation()
-						.description("Github")
-						.url("https://github.com/conteudoGeneration/"));		
+						.description("Github Projeto")
+						.url("https://github.com/Jadsonvs/GenBlogPessoal/"));		
 		
 	}
 	
