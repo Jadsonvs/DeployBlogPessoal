@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController //Informar ao Spring que essa é uma classe Repository
 @RequestMapping("/postagens") //Informaar por qual uri essa classe será acessada
-@CrossOrigin(origins="*") //Permitir que nossa classe aceite qualquer tipo de requisição
+@CrossOrigin (origins = "*", allowedHeaders = "*") //Permitir que nossa classe aceite qualquer tipo de requisição
 public class PostagemController {
 
 	@Autowired //Injeção de dependência/ todos os serviços do tipo postagem repository sejam acessados a partir do Controller
