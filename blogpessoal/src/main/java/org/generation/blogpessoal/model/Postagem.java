@@ -40,7 +40,7 @@ public class Postagem {
 	private Tema tema;//criando atributo para colocarmos as anotaçoes de relacionamento após a criacação de sua class
 	
 	@ManyToOne
-	@JsonIgnoreProperties("postagem")                                  
+	@JsonIgnoreProperties("postagens")                                  
 	private Usuario usuario;
 
 	//Gerar os getters e setters no final.
